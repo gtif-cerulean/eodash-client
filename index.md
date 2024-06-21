@@ -3,6 +3,6 @@
 layout: home
 
 hero:
-  name: "eodash Pages Template"
+  name: "GTIF Cerulean"
   text: ""
-  tagline: This is a template example of how to setup eodash within VitePress
+  tagline: Welcome! Here you can find information and services relevant to the GTIF Cerulean project!

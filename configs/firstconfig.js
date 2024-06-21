@@ -1,50 +1,95 @@
+const store = window.eodashStore;
+
 export default {
-    id: 'app',
-    stacEndpoint: "https://esa-eodash.github.io/RACE-catalog/RACE/catalog.json",
-    brand: {
-        noLayout:true,
-        name: 'runtime config 1',
-        font: { family: "Roboto" },
-        theme: {
-            colors: {
-                primary: "#AE9537",
-                surface: "#f2f4f3",
-                secondary: "#AE9537"
-            }
-        }
+  id: "demo",
+  stacEndpoint: "https://gtif-cerulean.github.io/catalog/cerulean/catalog.json",
+  brand: {
+    noLayout: true,
+    name: "Demo",
+    theme: {
+      colors: {
+        primary: "#fff",
+        secondary: "#fff",
+        surface: "#fff",
+      },
     },
-    template: {
-        loading: {
-            id: Symbol(),
-            type: "web-component",
-            widget: {
-                link: "https://cdn.jsdelivr.net/npm/ldrs/dist/auto/mirage.js",
-                tagName: "l-mirage",
-                properties: {
-                    class: "align-self-center justify-self-center",
-                    size: "120",
-                    speed: "2.5",
-                    color: "#004170"
-                }
-            }
+    footerText: "Demo configuration of eodash client",
+  },
+  template: {
+    loading: {
+      id: Symbol(),
+      type: "web-component",
+      widget: {
+        link: "https://cdn.jsdelivr.net/npm/ldrs/dist/auto/mirage.js",
+        tagName: "l-mirage",
+        properties: {
+          class: "align-self-center justify-self-center",
+          size: "120",
+          speed: "2.5",
+          color: "#004170",
         },
-        background: {
-            id: Symbol(),
-            type: "internal",
-            widget: {
-                name: "EodashMap"
-            }
+      },
+    },
+    background: {
+      id: Symbol(),
+      type: "internal",
+      widget: {
+        name: "EodashMap",
+      },
+    },
+    widgets: [
+      {
+        id: Symbol(),
+        type: "internal",
+        title: "Indicators",
+        layout: { x: 0, y: 0, w: 2, h: 12 },
+        widget: {
+          name: "EodashItemFilter",
         },
-        widgets: [
-            {
-                layout: { x: 0, y: 0, w: 3, h: 12 },
-                title: "Tools",
-                id: Symbol(),
-                type: "internal",
+      },
+      {
+        defineWidget: (selectedSTAC) => {
+          return selectedSTAC
+            ? {
+                id: "Information",
+                title: "Information",
+                layout: { x: 9, y: 0, w: 3, h: 12 },
+                type: "web-component",
                 widget: {
-                    name: "EodashItemFilter"
-                }
-            }
-        ]
-    }
-}
+                  link: "https://cdn.skypack.dev/@eox/stacinfo",
+                  properties: {
+                    for: store.states.currentUrl,
+                    allowHtml: "true",
+                    styleOverride:
+                      "#properties li > .value {font-weight: normal !important;}",
+                    header: "[]",
+
+                    subheader: "[]",
+                    properties: '["description"]',
+                    featured: "[]",
+                    footer: "[]",
+                  },
+                  tagName: "eox-stacinfo",
+                },
+              }
+            : null;
+        },
+      },
+      {
+        defineWidget: (selectedSTAC) => {
+          return selectedSTAC
+            ? {
+                id: "Datepicker",
+                type: "internal",
+                layout: { x: 5, y: 10, w: 1, h: 1 },
+                title: "Datepicker",
+                widget: {
+                  name: "EodashDatePicker",
+                },
+              }
+            : null;
+        },
+      },
+    ],
+  },
+};

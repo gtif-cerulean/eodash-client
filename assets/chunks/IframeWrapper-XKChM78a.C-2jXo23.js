@@ -1,1 +1,0 @@
-import{Z as e,k as s}from"./eo-dash.BBvrGB09.js";import"./framework.CXycA2KK.js";const t=["src"],l={__name:"IframeWrapper",props:{src:{type:String,required:!0}},setup(r){return(i,a)=>(e(),s("iframe",{src:r.src,class:"fill-height fill-width"},null,8,t))}};export{l as default};

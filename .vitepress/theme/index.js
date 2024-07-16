@@ -2,7 +2,10 @@
 import { h } from 'vue'
 import DefaultTheme from 'vitepress/theme'
 import './style.css'
-import '@eodash/eodash/webcomponent.css'
+import '../../.eodash/dist/eo-dash'
+import '../../.eodash/dist/style.css'
+import "@eox/storytelling"
+import "@eox/jsonform"
 
 /** @type {import('vitepress').Theme} */
 export default {
@@ -13,13 +16,6 @@ export default {
     })
   },
   async enhanceApp({ app, router, siteData }) {
-    if (!import.meta.env.SSR) {
-      const eodash = await import('@eodash/eodash/webcomponent');
-      app.use(eodash);
-      const jsonform = await import('@eox/jsonform');
-      app.use(jsonform);
-      const storytelling = await import('@eox/storytelling');
-      app.use(storytelling);
-    }
+    //
   }
 }

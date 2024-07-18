@@ -3,7 +3,7 @@
   "scripts": {
     "start": "ls .eodash/dist/eo-dash.js && vitepress dev || eodash build --lib && vitepress dev",
     "docs:dev": "vitepress dev",
-    "docs:build": "vitepress build",
+    "docs:build": "ls .eodash/dist/eo-dash.js && vitepress build || eodash build --lib && vitepress build",
     "docs:preview": "vitepress preview",
     "eodash:dev": "eodash dev",
     "eodash:build": "eodash build",

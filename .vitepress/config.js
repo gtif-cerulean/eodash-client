@@ -4,6 +4,13 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: "GTIF Cerulean",
   description: "Project information and service endpoint",
+  vue: {
+    template: {
+      compilerOptions: {
+        isCustomElement: (el) => el.includes('-')
+      }
+    }
+  },
   themeConfig: {
     nav: [
       { text: 'Home', link: '/' },

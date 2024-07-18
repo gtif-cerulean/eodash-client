@@ -1,0 +1,28 @@
+{
+    "compilerOptions": {
+        "baseUrl": ".",
+        "outDir": ".",
+        "target": "esnext",
+        "allowJs": true,
+        "checkJs": true,
+        "noEmit": true,
+        "skipLibCheck": true,
+        "module": "ESNext",
+        "moduleResolution": "Node"
+    },
+    "extends":"./tsconfig.node.json",
+    "exclude": [
+        "node_modules",
+        ".eodash/cache",
+        ".eodash/dist",
+        "public",
+        "dist",
+        "eodash.config.js"
+    ],
+    "include": [
+        "**/*.js",
+        "**/*.vue",
+        "**/*.d.ts",
+        "**/*.ts",
+    ]
+}

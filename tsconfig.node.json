@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+      "composite": true,
+      "module": "NodeNext",
+      "checkJs": true,
+      "allowJs": true,
+      "moduleResolution": "NodeNext",
+      "target": "ESNext",
+      "allowSyntheticDefaultImports": true,
+      "outDir": "dist"
+    },
+    "include": [
+      "eodash.config.js"
+    ]
+  }

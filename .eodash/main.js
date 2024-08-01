@@ -51,8 +51,6 @@ export default createEodash({
           },
         },
       },
-        },
-      },
       {
         defineWidget: (selectedSTAC) => {
           return selectedSTAC

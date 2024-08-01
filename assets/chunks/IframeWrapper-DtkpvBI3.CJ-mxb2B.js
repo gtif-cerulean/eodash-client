@@ -1,0 +1,1 @@
+import{e,c as s}from"./eo-dash.Bj-BwD49.js";import"./framework.DTpfHoR8.js";const t=["src"],l={__name:"IframeWrapper",props:{src:{type:String,required:!0}},setup(r){return(a,i)=>(e(),s("iframe",{src:r.src,class:"fill-height fill-width"},null,8,t))}};export{l as default};

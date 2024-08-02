@@ -4,7 +4,9 @@ layout: page
 <script setup>
     import { onMounted } from 'vue';
     import { data } from '../stories/config.data.js';
-    import { withBase } from 'vitepress'
+    import { withBase } from 'vitepress';
+    import '@eox/map';
+    import '@eox/jsonform';
 
     let storyid, storyurl;
     if (typeof window !== 'undefined' && 'URLSearchParams' in window) {
@@ -20,5 +22,5 @@ layout: page
 <eox-storytelling 
     v-if="storyurl" 
     :markdown-url="withBase(storyurl)"
-    style="overflow-y: auto; height: calc(var(--vh, 2vh) * 100);">
+    style="overflow-y: auto; height: calc(100vh - 64px)">
 </eox-storytelling>

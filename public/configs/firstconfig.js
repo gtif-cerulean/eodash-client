@@ -56,15 +56,6 @@ export default {
         },
       },
       {
-        id: Symbol(),
-        type: "internal",
-        title: "Layer Control",
-        layout: { x: 0, y: 8, w: 3, h: 4 },
-        widget: {
-          name: "EodashLayerControl",
-        },
-      },
-      {
         defineWidget: (selectedSTAC) => {
           return selectedSTAC
             ? {
@@ -119,6 +110,15 @@ export default {
                 },
               }
             : null;
+        },
+      },
+      {
+        id: Symbol(),
+        type: "internal",
+        title: "Layer Control",
+        layout: { x: 0, y: 8, w: 3, h: 4 },
+        widget: {
+          name: "EodashLayerControl",
         },
       },
       {

@@ -44,11 +44,11 @@ export default {
       {
         id: Symbol(),
         type: "internal",
-        title: "Indicators",
         layout: { x: 0, y: 0, w: 3, h: 8 },
         widget: {
           name: "EodashItemFilter",
           properties: {
+            filtersTitle: '',
             enableCompare: true,
             filterProperties: [],
             aggregateResults: 'collection_group',

@@ -2,8 +2,9 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "GTIF Cerulean",
+  title: "POLAR DASHBOARD",
   description: "Project information and service endpoint",
+  appearance: false, // disable dark mode
   vue: {
     template: {
       compilerOptions: {
@@ -12,6 +13,7 @@ export default defineConfig({
     }
   },
   themeConfig: {
+    logo: '/assets/Polar-TEP-Logo-White-300x135.png',
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Dashboard', link: '/uc1dashboard/' },

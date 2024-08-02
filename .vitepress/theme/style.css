@@ -68,6 +68,7 @@
   --vp-c-danger-2: var(--vp-c-red-2);
   --vp-c-danger-3: var(--vp-c-red-3);
   --vp-c-danger-soft: var(--vp-c-red-soft);
+  --vp-c-esa-blue: #003247;
 }
 
 /**
@@ -104,6 +105,7 @@
   --vp-custom-block-tip-text: var(--vp-c-text-1);
   --vp-custom-block-tip-bg: var(--vp-c-brand-soft);
   --vp-custom-block-tip-code-bg: var(--vp-c-brand-soft);
+  --vp-nav-logo-height: 50px;
 }
 
 /**
@@ -114,3 +116,13 @@
   --docsearch-primary-color: var(--vp-c-brand-1) !important;
 }
 
+:root, .VPNav {
+  --vp-nav-bg-color: var(--vp-c-esa-blue);
+  --vp-nav-logo-height: 50px;
+  
+  background: var(--vp-c-esa-blue);
+}
+.VPNav{
+  --vp-c-brand-1: rgb(191, 228, 253);
+  --vp-c-text-1: white;
+}

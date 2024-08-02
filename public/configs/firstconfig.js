@@ -35,6 +35,9 @@ export default {
       type: "internal",
       widget: {
         name: "EodashMap",
+        properties: {
+          enableCompare: true,
+        },
       },
     },
     widgets: [
@@ -46,9 +49,19 @@ export default {
         widget: {
           name: "EodashItemFilter",
           properties: {
+            enableCompare: true,
             filterProperties: [],
             aggregateResults: 'collection_group',
           },
+        },
+      },
+      {
+        id: Symbol(),
+        type: "internal",
+        title: "Layer Control",
+        layout: { x: 0, y: 8, w: 3, h: 4 },
+        widget: {
+          name: "EodashLayerControl",
         },
       },
       {

@@ -10,7 +10,7 @@
     "eodash:preview": "eodash preview"
   },
   "dependencies": {
-    "@eodash/eodash": "^5.0.0-alpha.2.13",
+    "@eodash/eodash": "^5.0.0-alpha.2.15",
     "@eox/storytelling": "^1.0.6",
     "@eox/jsonform": "^0.8.2",
     "@eox/stacinfo": "^0.3.3",

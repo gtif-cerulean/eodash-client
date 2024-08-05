@@ -2,8 +2,8 @@
 layout: page
 ---
 <script setup>
-    if(!customElements.get('eox-map') await import("@eox/map"))
-    if(!customElements.get('eox-jsonform') await import("@eox/jsonform"))
+    if(!customElements.get('eox-map')) import("@eox/map");
+    if(!customElements.get('eox-jsonform')) import("@eox/jsonform");
 </script>
 <style>
     .editor-wrapper {

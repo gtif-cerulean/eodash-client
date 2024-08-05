@@ -5,8 +5,8 @@ layout: page
     import { onMounted } from 'vue';
     import { data } from '../stories/config.data.js';
     import { withBase } from 'vitepress';
-    import '@eox/map';
-    import '@eox/jsonform';
+    if(!customElements.get('eox-map') await import("@eox/map"))
+    if(!customElements.get('eox-jsonform') await import("@eox/jsonform"))
 
     let storyid, storyurl;
     if (typeof window !== 'undefined' && 'URLSearchParams' in window) {

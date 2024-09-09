@@ -1,1 +1,0 @@
-import{b3 as n,l as t,C as i,b7 as s}from"./eo-dash.DmlGEMRm.js";function e(){const o=n(!1);return t(()=>{window.requestAnimationFrame(()=>{o.value=!0})}),{ssrBootStyles:i(()=>o.value?void 0:{transition:"none !important"}),isBooted:s(o)}}export{e as i};

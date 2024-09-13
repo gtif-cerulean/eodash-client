@@ -5,6 +5,7 @@ const searchParams = new URLSearchParams(window.location.search);
 if (searchParams.get('catalog')) {
   stacEndpoint = stacEndpoint.replace("catalog/",`catalog/pr-preview/${searchParams.get('catalog')}/`);
 }
+
 export default {
   id: "demo",
   stacEndpoint: stacEndpoint,

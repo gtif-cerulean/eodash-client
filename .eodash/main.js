@@ -1,9 +1,13 @@
 import "@eox/stacinfo"
 import { createEodash, store } from "@eodash/eodash";
-
+let stacEndpoint = "https://gtif-cerulean.github.io/catalog/cerulean/catalog.json";
+const searchParams = new URLSearchParams(window.location.search);
+if (searchParams.get('catalog')) {
+  stacEndpoint = stacEndpoint.replace("catalog/",`catalog/pr-preview/${searchParams.get('catalog')}/`);
+}
 export default createEodash({
   id: "GTIF Cerulean",
-  stacEndpoint: "https://gtif-cerulean.github.io/catalog/cerulean/catalog.json",
+  stacEndpoint,
   brand: {
     noLayout: true,
     name: "GTIF Cerulean",

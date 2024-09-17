@@ -50,7 +50,7 @@ export default {
       {
         id: Symbol(),
         type: "internal",
-        layout: { x: 0, y: 0, w: 3, h: 8 },
+        layout: { x: 0, y: 0, w: 3, h: 6 },
         widget: {
           name: "EodashItemFilter",
           properties: {
@@ -113,6 +113,10 @@ export default {
                 title: "Datepicker",
                 widget: {
                   name: "EodashDatePicker",
+                  properties: {
+                    hintText: `<b>Hint:</b> closest available date is displayed <br />
+                      on map (see Analysis Layers)`,
+                  },
                 },
               }
             : null;
@@ -122,7 +126,7 @@ export default {
         id: Symbol(),
         type: "internal",
         title: "Layer Control",
-        layout: { x: 0, y: 8, w: 3, h: 4 },
+        layout: { x: 0, y: 6, w: 3, h: 6 },
         widget: {
           name: "EodashLayerControl",
         },

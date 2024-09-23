@@ -10,8 +10,8 @@
     "eodash:preview": "eodash preview"
   },
   "dependencies": {
-    "@eodash/eodash": "^5.0.0-alpha.2.18",
-    "@eox/storytelling": "^1.0.7",
+    "@eodash/eodash": "^5.0.0-alpha.2.19",
+    "@eox/storytelling": "^1.1.0",
     "@eox/jsonform": "^0.8.2",
     "@eox/stacinfo": "^0.3.3",
     "vitepress": "^1.3.1",

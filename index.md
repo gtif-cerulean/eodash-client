@@ -3,6 +3,12 @@
 layout: home
 
 hero:
-  name: "GTIF Cerulean"
+  name: "Polar Dashboard"
   text: ""
-  tagline: Welcome! Here you can find information and services relevant to the GTIF Cerulean project!
+  heroImage: /assets/CIF-logo.png
+  tagline: "Unified Insights, Empowering Polar Research"
+---
+
+The Polar Dashboard provides seamless access to data relevant to multiple European Space Agency (ESA) projects, including the Cerulean Information Factory and Polar TEP. It offers researchers and stakeholders an intuitive interface to visualize, analyze, and manage polar data, enhancing collaboration and decision-making in environmental monitoring and climate change studies across the Arctic and Antarctic regions.
+
+Head over to the Dashboard in the navigation bar to explore the data!

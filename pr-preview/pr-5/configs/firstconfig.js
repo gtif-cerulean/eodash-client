@@ -50,7 +50,7 @@ export default {
       {
         id: Symbol(),
         type: "internal",
-        layout: { x: 0, y: 0, w: 3, h: 8 },
+        layout: { x: 0, y: 0, w: 3, h: 6 },
         widget: {
           name: "EodashItemFilter",
           properties: {
@@ -67,7 +67,7 @@ export default {
             ? {
                 id: "Information",
                 title: "Information",
-                layout: { x: 9, y: 0, w: 3, h: 12 },
+                layout: { x: 9, y: 0, w: 3, h: 6 },
                 type: "web-component",
                 widget: {
                   link: "https://cdn.skypack.dev/@eox/stacinfo",
@@ -122,7 +122,7 @@ export default {
         id: Symbol(),
         type: "internal",
         title: "Layer Control",
-        layout: { x: 0, y: 8, w: 3, h: 4 },
+        layout: { x: 0, y: 6, w: 3, h: 6 },
         widget: {
           name: "EodashLayerControl",
         },

@@ -18,7 +18,7 @@ export default defineConfig({
       { text: 'Home', link: '/' },
       { text: 'Dashboard', link: '/uc1dashboard/' },
       // { text: 'UC2 Dashboard', link: '/uc2dashboard/' },
-      { text: 'Stories', link: '/stories/' },
+      // { text: 'Stories', link: '/stories/' },
       { text: 'Editor', link: '/editor/' }
     ],
   }

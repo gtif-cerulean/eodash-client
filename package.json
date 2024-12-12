@@ -10,11 +10,11 @@
     "eodash:preview": "eodash preview"
   },
   "dependencies": {
-    "@eodash/eodash": "^5.0.0-alpha.2.19",
-    "@eox/storytelling": "^1.1.0",
+    "@eodash/eodash": "^5.0.0-alpha.2.25",
     "@eox/jsonform": "^0.8.2",
     "@eox/stacinfo": "^0.3.3",
-    "vitepress": "^1.3.1",
+    "@eox/storytelling": "^1.4.1",
+    "vitepress": "^1.5.0",
     "vue": "^3.4.21"
   }
 }

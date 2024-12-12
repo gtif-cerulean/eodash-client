@@ -16,6 +16,7 @@ export default {
       await import('../../.eodash/dist/eo-dash')
       await import('../../.eodash/dist/style.css')
       await import("@eox/storytelling")
+      await import("@eox/stacinfo")
     }
   }
 }

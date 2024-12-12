@@ -4,3 +4,4 @@ node_modules
 .vitepress/cache
 .eodash/cache
 .eodash/dist
+.DS_Store
